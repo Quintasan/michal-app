@@ -1,0 +1,20 @@
+default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+    host: <%= ENV.fetch("DATABASE_HOST") { "db" } %>
+    port: <%= ENV.fetch("DATABASE_PORT") { 5432 } %>
+    username: <%= ENV.fetch("DATABASE_USER") { "vscode" } %>
+    password: <%= ENV.fetch("DATABASE_PASSWORD") { "vscode" } %>
+
+development:
+    <<: *default
+    database: <%= ENV.fetch("DATABASE_NAME") { "appname_development" } %>
+
+test:
+    <<: *default
+    database: <%= ENV.fetch("DATABASE_NAME") { "appname_test" } %>
+
+production:
+    <<: *default
+    database: <%= ENV.fetch("DATABASE_NAME") { "appname_production" } %>

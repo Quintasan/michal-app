@@ -1,11 +1,24 @@
-# codespace-start
+# README
 
-Use this repo as a starting point for the attendees’ projects
-- Rails and bundler are included
-- Sqlite should work out of the box
-- Postgres will be running at the default port (5342)
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-**Important**: run `rails new -d postgresql -m template.rb .` to generate the app in the repository root, otherwise git is not going to like it.
+Things you may want to cover:
 
+* Ruby version
 
-Configuration based on [ruby-rails-postgres container](https://github.com/microsoft/vscode-dev-containers/tree/v0.236.0/containers/ruby-rails-postgres).
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
